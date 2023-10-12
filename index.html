@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accessibility Practice</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Web Accessibility Practice</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main id="home">
+      <article>
+        <h2>Introduction to Web Accessibility</h2>
+        <p>
+          Web accessibility ensures that websites, tools, and technologies are
+          designed and developed so that people with disabilities can use them.
+          This includes auditory, cognitive, neurological, physical, speech, and
+          visual disabilities.
+        </p>
+      </article>
+
+      <section id="about">
+        <h2>About Web Accessibility</h2>
+        <p>
+          Accessible websites can benefit people without disabilities, such as
+          when using a mobile phone, smartwatch, smart TV, and other devices.
+        </p>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+
+      <!-- Activities for Students -->
+      <section id="activities">
+        <h2>Accessibility Activities</h2>
+        <ol>
+          <li>
+            <p>
+              <strong>Activity 1:</strong> Add alternative text to the following
+              image:
+            </p>
+            <img
+              src="https://pbs.twimg.com/media/Cr1-9JiWYAA6gxn.jpg:large"
+              alt=""
+            />
+          </li>
+          <li>
+            <p>
+              <strong>Activity 2:</strong> The following link opens in a new
+              window. Add appropriate attributes to make it accessible:
+            </p>
+            <a href="https://www.lsu.edu/" target="_blank">Visit Example</a>
+          </li>
+          <li>
+            <p>
+              <strong>Activity 3:</strong> The color contrast of the following
+              text is low. Modify the CSS to improve its contrast:
+            </p>
+            <span class="low-contrast-text">This is a low contrast text.</span>
+          </li>
+          <li>
+            <p>
+              <strong>Activity 4:</strong> The following form field lacks a
+              label. Add an appropriate label for it:
+            </p>
+            <input type="text" id="unlabeledField" name="unlabeledField" />
+          </li>
+        </ol>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Web Accessibility Practice. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
